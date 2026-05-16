@@ -22,7 +22,7 @@ def registrar_entrevista(
     db: Session = Depends(get_db)
 ):
     # Determinamos el estado
-    nuevo_estado = EstadoFase.ENTREVISTA if aceptado else EstadoFase.RECHAZADO
+    nuevo_estado = EstadoFase.DOCUMENTACION if aceptado else EstadoFase.RECHAZADO
     
     # Determinamos BD
     db_postulante = PostulanteDB(

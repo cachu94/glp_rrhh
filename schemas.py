@@ -21,5 +21,4 @@ class TipoRechazo(str, Enum):
 class Postulante(Entrevistado):
     id: int
     estado: EstadoFase
-    rechazo: Optional[TipoRechazo] = None
     motivo_rechazo: Optional[str] = None
